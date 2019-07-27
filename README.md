@@ -6,7 +6,7 @@ This gem is used to generate random string.
     
 ## Description
 Default length of the random string will be 10.
-By default characters will be used to generate random string. You can also pass the characters to generate random string with them.
+You can pass the characters to generate random string with them. By default below characters will be used to generate random string.
     
     abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
