@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{string_randomizer}
-  s.version = "0.0.4"
+  s.version = "0.0.6"
   s.date = %q{2019-07-27}
   s.summary = %q{Gem can be used to generate random string for dummy data}
   s.authors = ["Anshul"]

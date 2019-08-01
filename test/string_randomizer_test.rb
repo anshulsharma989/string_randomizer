@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'string_randomizer'
+require_relative '../lib/string_randomizer.rb'
 
 class StringRandomizerTest < Minitest::Test
   def test_random_string_length
@@ -24,7 +24,7 @@ class StringRandomizerTest < Minitest::Test
   private
 
   def assert_string_contain_all_characters(uniq_char, allowed_chars)
-    uniq_char.each {|n| return false unless allowed_chars.include?(char)}
+    uniq_char.each {|char| return false unless allowed_chars.include?(char)}
     true
   end
 end

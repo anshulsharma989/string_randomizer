@@ -9,4 +9,4 @@ class StringRandomizer
   end
 end
 
-require 'string_randomizer/string_generator'
+require_relative './string_randomizer/string_generator'
