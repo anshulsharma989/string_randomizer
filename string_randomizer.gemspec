@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.homepage = 'https://rubygems.org/gems/string_randomizer'
   s.required_ruby_version = '>= 2.1.6'
+  s.add_development_dependency "minitest", "~> 5.0"
   s.files = [
       "lib/string_randomizer.rb",
       "lib/string_randomizer/string_generator.rb"
