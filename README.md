@@ -13,12 +13,13 @@ You can pass the characters to generate random string with them. By default belo
 StringRandomizer.generate() method will return one line by default if you want multiple line with same length then you can pass the number of line. Checkout the sample example.
 ## example:
 
-    StringRandomizer.generate(string_length, allowed_characters, number_of_line)
+    options = {:length => ?, :choose_from => ?, :lines => ?}
+    StringRandomizer.generate(options)
     
  If you want 3 line of 10 characters from '1ck4' characters then methods will be like below
     
     
-    Input  : StringRandomizer.generate(10, '1ck4', 3)
+    Input  : StringRandomizer.generate({:length => 10, :choose_from => 1ck4, :lines => 3})
     Output : cc41k414c4
              c444k41ckc
              ccc1k114cc
@@ -26,4 +27,4 @@ StringRandomizer.generate() method will return one line by default if you want m
 ## license:
 MIT
 ## versions:
-0.0.4
+0.0.7
