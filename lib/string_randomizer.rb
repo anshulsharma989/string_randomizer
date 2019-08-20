@@ -3,9 +3,18 @@ class StringRandomizer
   DEFAULT_ALLOWED_CHAR = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
   DEFAULT_STRING_LENGTH = 10
 
-  def self.generate(string_length = DEFAULT_STRING_LENGTH, allowed_char = DEFAULT_ALLOWED_CHAR, total_line = 1)
-    string_generator = StringGenerator.new(string_length, allowed_char, total_line)
+  def self.generate(options)
+    string_generator = StringGenerator.new(handle_options(options))
     string_generator.generate_string
+  end
+
+  private
+
+  def self.handle_options(options)
+    options[:length] = options[:length] || DEFAULT_STRING_LENGTH
+    options[:choose_from] = options[:choose_from] || DEFAULT_ALLOWED_CHAR
+    options[:lines] = options[:lines] || 1
+    options
   end
 end
 
